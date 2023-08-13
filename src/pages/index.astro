@@ -1,85 +1,85 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
-import Crowd from '../components/Crowd.astro';
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Crowd from "../components/Crowd.astro";
 ---
 
 <Layout title="Patrick Ren - Developer, thinker, doer.">
-	<main>
-		<h1>Nice to meet <span class="text-gradient">you</span></h1>
-		<p class="instructions">
-			I'm <strong>Patrick Ren</strong>.
-			<br />
-			An indie fullstack developer/creator.  
-			<br />
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://github.com/librz"
-				title="Work"
-				body="I mainly work with React and Typescript, come and star my repos!"
-			/>
-			<Card
-				href="https://ellifist.com"
-				title="Side hustle"
-				body="I'm developing ellifist.com - a site for learning Japanese."
-			/>
-			<Card
-				href="https://blog.realrz.com"
-				title="Blog"
-				body="Yes, I do maintain a blog. It's currently all written in Chinese."
-			/>
-			<Card
-				href="mailto:rz19960718@gmail.com"
-				title="Contact"
-				body="Ask me anything. I check my inbox quite frequently."
-			/>
-		</ul>
-	</main>
+  <main>
+    <h1>Nice to meet <span class="text-gradient">you</span></h1>
+    <p class="instructions">
+      I'm <strong>Patrick Ren</strong>.
+      <br />
+      A frontend developer/creator aiming to make the web a less horrible place.
+      <br />
+    </p>
+    <ul role="list" class="link-card-grid">
+      <Card
+        href="https://github.com/librz"
+        title="Work"
+        body="I mainly work with React and Typescript, come and star my repos!"
+      />
+      <Card
+        href="https://ellifist.com"
+        title="Side hustle"
+        body="I'm developing ellifist.com - a site for learning Japanese."
+      />
+      <Card
+        href="https://blog.realrz.com"
+        title="Blog"
+        body="Yes, I do maintain a blog. It's currently all written in Chinese."
+      />
+      <Card
+        href="mailto:rz19960718@gmail.com"
+        title="Contact"
+        body="Ask me anything. I check my inbox quite frequently."
+      />
+    </ul>
+  </main>
 </Layout>
 <Crowd />
 
 <style>
-	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
-	}
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		border: 1px solid rgba(var(--accent), 25%);
-		background-color: white;
-		padding: 1rem;
-		border-radius: 0.4rem;
-	}
-	.instructions code {
-		font-size: 0.875em;
-		font-weight: bold;
-		background: rgba(var(--accent), 12%);
-		color: rgb(var(--accent));
-		border-radius: 4px;
-		padding: 0.3em 0.45em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
+  main {
+    margin: auto;
+    padding: 1.5rem;
+    max-width: 60ch;
+  }
+  h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0;
+  }
+  .text-gradient {
+    background-image: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400%;
+    background-position: 0%;
+  }
+  .instructions {
+    line-height: 1.6;
+    margin: 1rem 0;
+    border: 1px solid rgba(var(--accent), 25%);
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.4rem;
+  }
+  .instructions code {
+    font-size: 0.875em;
+    font-weight: bold;
+    background: rgba(var(--accent), 12%);
+    color: rgb(var(--accent));
+    border-radius: 4px;
+    padding: 0.3em 0.45em;
+  }
+  .instructions strong {
+    color: rgb(var(--accent));
+  }
+  .link-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+    gap: 1rem;
+    padding: 0;
+  }
 </style>
